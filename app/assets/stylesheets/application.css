@@ -1,0 +1,120 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.mine{
+    height: 40px;
+    background-color:  #DDDDDD;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.title{
+    color: black;
+    background-color: #DDDDDD;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*中身*/
+.content-left{
+    height: 100vh;
+    width: 25%;
+}
+
+.content-middle{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.content-right{
+    height: 100vh;
+    width: 25%;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #DDDDDD;
+}
+
+/*ヘッダー*/
+
+.header{
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header a{
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*トップニュース*/
+
+.news-image img{
+    width: 250px;
+    height: 150px;
+    vertical-align: bottom;
+}
+
+
+.news p {
+    margin: 0; 
+    padding: 0;
+}
+
+.news-title a{
+    color: black;
+    text-align: center;
+}
+
+.news-title{
+    color: black;
+    table-layout: fixed;
+    word-wrap: break-word;
+    height: 115px;
+    text-align: center;
+    font-size: 80%;
+    align-items: flex-start;
+}
+
+.news {
+    color: #00000000;/*文字色*/
+    border: solid 3px #000000;/*線色*/
+    padding: 0.5em;/*文字周りの余白*/
+    border-radius: 0.5em;/*角丸*/
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+  }
+
+.news-date{
+    color: rgb(98, 95, 105);
+    text-align: right;
+    height: 20px;
+    align-items: flex-end;
+}

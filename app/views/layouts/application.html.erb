@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Outblog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <title><%=yield(:title)%></title> <!--タイトル設定-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--bootstrap導入-->
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="content-left">
+      </div>
+      <div class="content-middle">
+        <div class="header">
+          <h1><%=link_to("Blog","/")%></h1>
+        </div>
+        <%= yield %>
+      </div>
+      <div class="content-right">
+      </div>
+    </div>
+  </body>
+</html>
